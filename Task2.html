@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>University Admission Form</title>
+
+    <!-- Internal CSS -->
+    <style>
+
+        body {
+            font-family: Arial;
+            background-color: lightgray;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(116, 116, 214);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: darkgreen;
+            text-align: center;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+        }
+
+        p {
+            text-align: center;
+            line-height: 1.5;
+            word-spacing: 3px;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            width: 70%;
+            margin: auto;
+        }
+
+        label {
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        input, select, textarea {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding: 8px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 95%;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        table {
+            width: 90%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: darkblue;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        td {
+            text-transform: capitalize;
+        }
+
+        .media {
+            text-align: center;
+            margin: 30px;
+        }
+
+        pre {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            overflow: auto;
+            text-align: left;
+        }
+
+        code {
+            font-family: Consolas;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Page Heading -->
+
+    <h1>University Admission Form</h1>
+
+    <p>
+        Welcome to our university admission page.
+        Please fill in the form carefully.
+    </p>
+
+
+    <!-- Admission Form -->
+
+    <h2>Student Admission Form</h2>
+
+    <form>
+
+        <!-- Personal Information -->
+
+        <h3>Personal Information</h3>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter password">
+        <br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob">
+        <br>
+
+        <label>Gender:</label><br>
+
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+
+        <br><br>
+
+
+        <!-- Contact Information -->
+
+        <h3>Contact Information</h3>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+        <br>
+
+        <label for="city">City:</label><br>
+
+        <select id="city" name="city">
+
+            <option value="">Select City</option>
+            <option value="Abbottabad">Abbottabad</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Rawalpindi">Rawalpindi</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Peshawar">Peshawar</option>
+            <option value="Karachi">Karachi</option>
+
+        </select>
+
+        <br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address"
+            placeholder="Enter your complete address"></textarea>
+
+        <br>
+
+
+        <!-- Academic Information -->
+
+        <h3>Academic Information</h3>
+
+        <label for="marks">Previous Marks:</label><br>
+        <input type="number" id="marks" name="marks"
+            placeholder="Enter your marks">
+        <br>
+
+        <label for="program">Preferred Program:</label><br>
+
+        <select id="program" name="program">
+
+            <option value="">Select Program</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Software Engineering">Software Engineering</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <option value="Business Administration">Business Administration</option>
+
+        </select>
+
+        <br>
+
+        <!-- Interests and Skills -->
+
+        <h3>Interests / Skills</h3>
+
+        <p>Select the subjects or skills you are interested in:</p>
+
+        <input type="checkbox" id="programming" name="skills" value="Programming">
+        <label for="programming">Programming</label>
+        <br>
+
+        <input type="checkbox" id="database" name="skills" value="Database">
+        <label for="database">Database</label>
+        <br>
+
+        <input type="checkbox" id="web" name="skills" value="Web Development">
+        <label for="web">Web Development</label>
+        <br>
+
+        <input type="checkbox" id="networking" name="skills" value="Networking">
+        <label for="networking">Networking</label>
+        <br>
+
+        <input type="checkbox" id="graphics" name="skills" value="Graphic Design">
+        <label for="graphics">Graphic Design</label>
+
+        <br><br>
+
+
+        <!-- Profile Picture -->
+
+        <h3>Profile Picture</h3>
+
+        <label for="picture">Upload your picture:</label><br>
+
+        <input type="file" id="picture" name="picture" accept="image/*">
+
+        <br><br>
+
+
+        <!-- Additional Information -->
+
+        <h3>Additional Information</h3>
+
+        <label for="reason">
+            Why do you want to join this university?
+        </label>
+
+        <br>
+
+        <textarea id="reason" name="reason"
+            placeholder="Write your reason here"></textarea>
+
+        <br>
+
+
+        <!-- Form Buttons -->
+
+        <input class="button" type="submit" value="Submit">
+
+        <input class="button" type="reset" value="Reset">
+
+    </form>
+
+
+    <!-- Student Information Table -->
+
+    <h2>Student Information</h2>
+
+    <table>
+
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Department</th>
+        </tr>
+
+        <tr>
+            <td>Ali</td>
+            <td>Khan</td>
+            <td>ali@gmail.com</td>
+            <td>Computer Science</td>
+        </tr>
+
+        <tr>
+            <td>Ayesha</td>
+            <td>Khan</td>
+            <td>ayesho@gmail.com</td>
+            <td>Information Technology</td>
+        </tr>
+
+        <tr>
+            <td>Sara</td>
+            <td>Yousafzai</td>
+            <td>sara@gmail.com</td>
+            <td>Software Engineering</td>
+        </tr>
+
+        <tr>
+            <td>Hassan</td>
+            <td>Ali</td>
+            <td>hasan@gmail.com</td>
+            <td>Electrical Engineering</td>
+        </tr>
+
+        <tr>
+            <td>Ayesha</td>
+            <td>Yousafzai</td>
+            <td>ayesha@gmail.com</td>
+            <td>Business Administration</td>
+        </tr>
+
+    </table>
+
+
+    <!-- Iframe -->
+
+    <div class="media">
+
+        <h2>University Website</h2>
+
+        <iframe
+            src="https://uetmardan.edu.pk/"
+            width="900"
+            height="500">
+        </iframe>
+
+    </div>
+
+<!-- Video -->
+
+<div class="media">
+
+    <h2>University Introduction Video</h2>
+
+    <iframe width="900" height="500"
+        src="https://www.youtube.com/embed/5ZllMLEyvhw"
+        title="YouTube video player"
+        allowfullscreen>
+    </iframe>
+
+</div>
+
+
+    <!-- Audio -->
+
+    <div class="media">
+
+        <h2>University Audio</h2>
+
+        <audio controls>
+
+            <source src="university.mp3" type="audio/mpeg">
+
+            Your browser does not support the audio tag.
+
+        </audio>
+
+    </div>
+
+
+    <!-- Complete HTML Code -->
+
+    <h2>Complete HTML Code</h2>
+
+    <pre>
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;title&gt;University Admission Form&lt;/title&gt;
+
+    &lt;style&gt;
+
+        body {
+            font-family: Arial;
+            background-color: lightgray;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: darkgreen;
+            text-align: center;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+        }
+
+        p {
+            text-align: center;
+            line-height: 1.5;
+            word-spacing: 3px;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            width: 70%;
+            margin: auto;
+        }
+
+        label {
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        input, select, textarea {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding: 8px;
+        }
+
+        table {
+            width: 90%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: darkblue;
+            color: white;
+        }
+
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;University Admission Form&lt;/h1&gt;
+
+    &lt;form&gt;
+
+        &lt;h3&gt;Personal Information&lt;/h3&gt;
+
+        &lt;label&gt;Name:&lt;/label&gt;
+        &lt;input type="text"&gt;
+
+        &lt;label&gt;Password:&lt;/label&gt;
+        &lt;input type="password"&gt;
+
+        &lt;label&gt;Date of Birth:&lt;/label&gt;
+        &lt;input type="date"&gt;
+
+        &lt;h3&gt;Contact Information&lt;/h3&gt;
+
+        &lt;label&gt;Email:&lt;/label&gt;
+        &lt;input type="email"&gt;
+
+        &lt;label&gt;Phone Number:&lt;/label&gt;
+        &lt;input type="tel"&gt;
+
+        &lt;h3&gt;Academic Information&lt;/h3&gt;
+
+        &lt;label&gt;Previous Marks:&lt;/label&gt;
+        &lt;input type="number"&gt;
+
+        &lt;h3&gt;Interests / Skills&lt;/h3&gt;
+
+        &lt;input type="checkbox"&gt; Programming
+        &lt;input type="checkbox"&gt; Database
+        &lt;input type="checkbox"&gt; Networking
+
+        &lt;h3&gt;Profile Picture&lt;/h3&gt;
+
+        &lt;input type="file"&gt;
+
+        &lt;h3&gt;Additional Information&lt;/h3&gt;
+
+        &lt;textarea&gt;&lt;/textarea&gt;
+
+        &lt;input type="submit" value="Submit"&gt;
+        &lt;input type="reset" value="Reset"&gt;
+
+    &lt;/form&gt;
+
+    &lt;h2&gt;Student Information&lt;/h2&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+            &lt;th&gt;First Name&lt;/th&gt;
+            &lt;th&gt;Last Name&lt;/th&gt;
+            &lt;th&gt;Email&lt;/th&gt;
+            &lt;th&gt;Department&lt;/th&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;Ali&lt;/td&gt;
+            &lt;td&gt;Khan&lt;/td&gt;
+            &lt;td&gt;ali@gmail.com&lt;/td&gt;
+            &lt;td&gt;Computer Science&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;Ayesha&lt;/td&gt;
+            &lt;td&gt;Khan&lt;/td&gt;
+            &lt;td&gt;ayesho@gmail.com&lt;/td&gt;
+            &lt;td&gt;Information Technology&lt;/td&gt;
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+    &lt;iframe src="https://www.example.com"&gt;&lt;/iframe&gt;
+
+    &lt;video controls&gt;
+        &lt;source src="university.mp4" type="video/mp4"&gt;
+    &lt;/video&gt;
+
+    &lt;audio controls&gt;
+        &lt;source src="university.mp3" type="audio/mpeg"&gt;
+    &lt;/audio&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code>
+    </pre>
+
+</body>
+
+</html>
